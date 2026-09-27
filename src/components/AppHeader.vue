@@ -18,7 +18,7 @@
     <div class="app-utilities">
       <a
         class="icon-button"
-        href="https://github.com/Andepthy/Brassigloss"
+        href="https://github.com/Andepthy/brassigloss"
         target="_blank"
         rel="noopener noreferrer"
         :aria-label="'GitHub'"
