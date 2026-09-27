@@ -1,13 +1,13 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/Andepthy/Brassigloss/main/public/favicon.svg" width="128" alt="Brassigloss icon">
+<img src="https://raw.githubusercontent.com/Andepthy/brassigloss/main/public/favicon.svg" width="128" alt="Brassigloss icon">
 
 ---
 
 # Brassigloss
 
-![GitHub License](https://img.shields.io/github/license/Andepthy/Brassigloss)
-[![GitHub stars](https://img.shields.io/github/stars/Andepthy/Brassigloss)](https://github.com/Andepthy/Brassigloss/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/Andepthy/Brassigloss)](https://github.com/Andepthy/Brassigloss/issues)
+![GitHub License](https://img.shields.io/github/license/Andepthy/brassigloss)
+[![GitHub stars](https://img.shields.io/github/stars/Andepthy/brassigloss)](https://github.com/Andepthy/brassigloss/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/Andepthy/brassigloss)](https://github.com/Andepthy/brassigloss/issues)
 </div>
 
 Brassigloss 是一个用于浏览、搜索和对照游戏及 Mod 翻译文本的 Vue 3 单页应用。
@@ -25,7 +25,7 @@ Brassigloss 是一个用于浏览、搜索和对照游戏及 Mod 翻译文本的
 
 Brassigloss 通过 GitHub Pages 发布：
 
-- <https://andepthy.github.io/Brassigloss/>
+- <https://andepthy.github.io/brassigloss/>
 
 ## 功能
 
