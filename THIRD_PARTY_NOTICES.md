@@ -1,60 +1,60 @@
 # Third-Party Notices
 
-本文件列出 Brassigloss 使用、参考或随仓库分发的第三方项目、内容与软件。项目根目录的 Apache-2.0 `LICENSE` 仅适用于 Brassigloss 自主编写的软件代码，不应被解释为对下列第三方内容重新授权。
+This file lists the third-party projects, content, and software that Brassigloss uses, references, or distributes with the repository. The Apache-2.0 `LICENSE` in the project root applies only to the software code written by Brassigloss and should not be construed as re-licensing any of the third-party content listed below.
 
 ## Verdigloss
 
-本项目在应用架构、产品设计、交互方式和功能范围方面参考了 Verdigloss。
+This project referenced Verdigloss for its application architecture, product design, interaction patterns, and feature scope.
 
-- 项目：<https://github.com/SkyEye-FAST/verdigloss>
-- 版权：Copyright (c) 2025-2026 SkyEye_FAST
-- 许可证：Apache License 2.0
+- Project: <https://github.com/SkyEye-FAST/verdigloss>
+- Copyright: Copyright (c) 2025-2026 SkyEye_FAST
+- License: Apache License 2.0
 
-如果本仓库中的任何文件改编自 Verdigloss，则该文件仍受 Apache License 2.0 约束，并保留适用的版权、许可证和归属声明。Verdigloss 的名称及相关标识归其权利人所有。
+If any file in this repository is adapted from Verdigloss, that file remains subject to the Apache License 2.0, and applicable copyright, license, and attribution notices are retained. The Verdigloss name and related marks belong to their respective owners.
 
-## 游戏和模组翻译内容
+## Game and Mod Translation Content
 
-本仓库包含或生成以下第三方游戏与模组相关的翻译键、原文、译文、名称和其他文本：
+This repository contains or generates translation keys, source text, translations, names, and other text related to the following third-party games and mods:
 
 - `data/aeronautics/**`
 - `data/chants-of-sennaar/**`
 - `data/create/**`
 - `data/offroad/**`
 - `data/simulated/**`
-- 从上述文件生成的 `public/data/translations.json`
+- `public/data/translations.json` generated from the files above
 
-其中涉及但不限于：
+This includes, but is not limited to:
 
-- Minecraft Java Edition 及其相关内容和商标
-- Create 模组及其附属模组，包括 Create Aeronautics、Simulated 和 Offroad
-- 《Chants of Sennaar》及其相关内容和商标
-- 上述游戏和模组的开发者、发行商、译者和社区贡献者
+- Minecraft Java Edition and its related content and trademarks
+- The Create mod and its add-on mods, including Create Aeronautics, Simulated, and Offroad
+- Chants of Sennaar and its related content and trademarks
+- The developers, publishers, translators, and community contributors of the games and mods above
 
-这些第三方文本、名称、商标和翻译内容归其各自权利人所有。Brassigloss 的 Apache-2.0 许可证不授予复制、修改、分发、商业化或再许可这些第三方内容的权利。
+These third-party texts, names, trademarks, and translation content belong to their respective owners. The Apache-2.0 license for Brassigloss does not grant the right to copy, modify, distribute, commercialize, or sublicense this third-party content.
 
-本仓库收录相关文本的目的限于翻译浏览、对照、研究和非商业参考。使用者应自行确认其使用方式符合相关权利方的许可、社区翻译政策、游戏或模组发行条款以及适用法律。
+This repository includes the relevant texts solely for translation browsing, comparison, research, and non-commercial reference. Users are responsible for confirming that their use complies with the permissions of the relevant rights holders, community translation policies, game or mod distribution terms, and applicable law.
 
-任何第三方权利方如需更正署名、补充许可证信息或要求移除内容，请通过本仓库的 Issue 联系维护者。
+If any third-party rights holder wishes to correct attribution, add license information, or request removal of content, please contact the maintainers through an issue in this repository.
 
-## 开源软件依赖
+## Open Source Software Dependencies
 
-本项目使用 Vue、Vite、`@vitejs/plugin-vue` 及其传递依赖。这些软件由各自作者和贡献者开发，并依照其随包提供的许可证授权，通常包括 MIT License 或其他兼容的开源许可证。
+This project uses Vue, Vite, `@vitejs/plugin-vue`, and their transitive dependencies. This software is developed by its respective authors and contributors and licensed under the licenses provided with each package, typically the MIT License or another compatible open source license.
 
-准确的依赖版本和来源记录在 `pnpm-lock.yaml` 中。重新分发生产构建、源代码包或安装包时，应根据实际打包内容保留相应依赖的版权和许可证声明。各依赖的具体条款以其发布包中的 `LICENSE`、`COPYING`、`NOTICE` 或其他许可证文件为准。
+The exact dependency versions and sources are recorded in `pnpm-lock.yaml`. When redistributing a production build, source package, or installation package, retain the copyright and license notices of the relevant dependencies according to what is actually bundled. The specific terms of each dependency are governed by the `LICENSE`, `COPYING`, `NOTICE`, or other license files in its published package.
 
-## 商标和隶属关系
+## Trademarks and Affiliation
 
-Minecraft、Create、Create Aeronautics、Simulated、Offroad、Chants of Sennaar、Verdigloss 及其他名称和标识可能是其各自权利人的商标或注册商标。
+Minecraft, Create, Create Aeronautics, Simulated, Offroad, Chants of Sennaar, Verdigloss, and other names and marks may be trademarks or registered trademarks of their respective owners.
 
-Brassigloss 与上述游戏、模组、项目的开发者、发行商或维护者不存在隶属、赞助、认证或官方认可关系。相关名称仅用于说明兼容对象、数据来源或参考关系。
+Brassigloss is not affiliated with, sponsored by, certified by, or officially endorsed by the developers, publishers, or maintainers of the games, mods, or projects listed above. The relevant names are used only to indicate compatibility targets, data sources, or reference relationships.
 
-## 项目许可证范围
+## Scope of the Project License
 
-Brassigloss 自主编写的软件代码采用 Apache License 2.0。该许可证不覆盖：
+The software code written by Brassigloss is licensed under the Apache License 2.0. That license does not cover:
 
-- 第三方游戏、模组或软件的源代码；
-- 第三方原文、译文、术语、名称、图标、图像、音频或其他资源；
-- 属于其他权利人的商标、品牌和产品标识；
-- 仓库中明确标注为其他许可证的内容。
+- the source code of third-party games, mods, or software;
+- third-party source text, translations, terminology, names, icons, images, audio, or other assets;
+- trademarks, brands, and product marks belonging to other rights holders;
+- content in the repository explicitly marked as being under another license.
 
-如本文件与项目根目录 [LICENSE](LICENSE) 存在冲突，就自主编写的软件代码而言，以 Apache License 2.0 为准；就第三方内容而言，以相应权利方的许可证或使用条款为准。
+If this file conflicts with the [LICENSE](LICENSE) in the project root, then for the software code written by this project the Apache License 2.0 prevails, and for third-party content the license or terms of use of the relevant rights holder prevail.
