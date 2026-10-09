@@ -10,55 +10,55 @@
 [![GitHub issues](https://img.shields.io/github/issues/Andepthy/brassigloss)](https://github.com/Andepthy/brassigloss/issues)
 </div>
 
-Brassigloss 是一个用于浏览、搜索和对照游戏及 Mod 翻译文本的 Vue 3 单页应用。
+Brassigloss is a Vue 3 single-page application for browsing, searching, and comparing translation text for games and mods.
 
-项目当前包含 Create、Create Aeronautics 和 Chants of Sennaar 的翻译文件，可按项目和语言筛选，并在表格中并排查看原文与译文。
+The project currently includes translation files for Create, Create Aeronautics, and Chants of Sennaar. You can filter by project and language, and view source text and translations side by side in a table.
 
-> 本项目的 Apache-2.0 许可证仅适用于自主编写的软件代码。游戏、Mod、发行商及其本地化贡献者提供的名称、原文、译文和其他第三方内容不适用该许可证。详细信息请参阅 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+> The Apache-2.0 license for this project applies only to the software code written by this project. Names, source text, translations, and other third-party content provided by games, mods, publishers, and their localization contributors are not covered by that license. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for details.
 
-## 来源与 AI 披露
+## Origin and AI Disclosure
 
-- 本项目深受 [Verdigloss](https://github.com/SkyEye-FAST/verdigloss) 启发，并在其基础上针对当前翻译数据进行了调整。本项目不是 Verdigloss 的官方分支、续作或认可版本。
-- 本项目在开发过程中借助 AI 编码工具辅助编写、重构和整理代码、文档及测试相关内容。AI 生成或修改的内容由项目维护者审阅、调整并负责。
+- This project is heavily inspired by [Verdigloss](https://github.com/SkyEye-FAST/verdigloss) and has been adapted on top of it for the current translation data. This project is not an official fork, successor, or endorsed version of Verdigloss.
+- AI coding tools were used during development to assist with writing, refactoring, and organizing code, documentation, and test-related content. Content generated or modified by AI is reviewed, adjusted, and owned by the project maintainers.
 
-## 演示
+## Demo
 
-Brassigloss 通过 GitHub Pages 发布：
+Brassigloss is published via GitHub Pages:
 
 - <https://andepthy.github.io/brassigloss/>
 
-## 功能
+## Features
 
-- [x] 按翻译键或任意已选语言文本搜索
-- [x] 按项目、语言和文本分类进行多选筛选
-- [x] 根据所选项目动态显示可用语言列
-- [x] 分页浏览大量翻译条目
-- [x] 深色与浅色主题切换
-- [x] 衬线字体与无衬线字体切换
-- [x] 响应式翻译对照表
+- [x] Search by translation key or by text in any selected language
+- [x] Multi-select filtering by project, language, and text category
+- [x] Dynamically show available language columns based on the selected project
+- [x] Paginated browsing of large numbers of translation entries
+- [x] Dark and light theme switching
+- [x] Serif and sans-serif font switching
+- [x] Responsive translation comparison table
 
-## 架构
+## Architecture
 
-- `src/app/` 配置应用启动与挂载。
-- `src/components/` 包含应用标题、查询控件、分页和翻译对照表。
-- `src/composables/` 管理主题、字体和紧凑布局偏好。
-- `src/features/` 包含筛选、项目编目和分页等业务逻辑。
-- `src/services/` 加载运行时翻译数据。
-- `scripts/preprocess.mjs` 负责发现数据源并生成应用使用的统一 JSON。
-- `scripts/lib/` 提供 CSV 解析和数据源发现等预处理模块。
-- `scripts/windows/` 提供 Windows 下的便捷启动与数据更新脚本。
+- `src/app/` configures application startup and mounting.
+- `src/components/` contains the app header, query controls, pagination, and the translation comparison table.
+- `src/composables/` manages theme, font, and compact layout preferences.
+- `src/features/` contains business logic such as filtering, project cataloging, and pagination.
+- `src/services/` loads runtime translation data.
+- `scripts/preprocess.mjs` discovers data sources and generates the unified JSON used by the app.
+- `scripts/lib/` provides preprocessing modules such as CSV parsing and data source discovery.
+- `scripts/windows/` provides convenience launch and data update scripts for Windows.
 
-主要目录结构如下：
+The main directory structure is as follows:
 
 ```text
 .
 |-- data/
-|   |-- aeronautics/                    # Create Aeronautics 翻译数据
-|   |-- chants-of-sennaar/              # Chants of Sennaar CSV 数据
-|   `-- create/                         # Create 翻译数据
-|-- public/data/translations.json       # 应用运行时读取的生成文件
-|-- scripts/                            # 数据预处理与便捷脚本
-|-- src/                                # Vue 应用源码
+|   |-- aeronautics/                    # Create Aeronautics translation data
+|   |-- chants-of-sennaar/              # Chants of Sennaar CSV data
+|   `-- create/                         # Create translation data
+|-- public/data/translations.json       # Generated file read by the app at runtime
+|-- scripts/                            # Data preprocessing and convenience scripts
+|-- src/                                # Vue application source
 |-- index.html
 |-- package.json
 |-- pnpm-lock.yaml
@@ -68,80 +68,80 @@ Brassigloss 通过 GitHub Pages 发布：
 `-- THIRD_PARTY_NOTICES.md
 ```
 
-## 开发
+## Development
 
-Brassigloss 需要 Node.js ^20.19.0 或 >=22.12.0，并使用 pnpm 管理依赖。
+Brassigloss requires Node.js ^20.19.0 or >=22.12.0 and uses pnpm to manage dependencies.
 
-1. 安装依赖：
+1. Install dependencies:
 
    ```shell
    pnpm install
    ```
 
-2. 从 `data/` 生成应用使用的翻译数据：
+2. Generate the translation data used by the app from `data/`:
 
    ```shell
    pnpm preprocess
    ```
 
-3. 启动开发服务器：
+3. Start the development server:
 
    ```shell
    pnpm dev
    ```
 
-4. 在浏览器中打开 <http://localhost:5173/>。
+4. Open <http://localhost:5173/> in your browser.
 
-常用命令如下：
+Common commands:
 
 ```shell
-pnpm dev          # 启动 Vite 开发服务器
-pnpm preprocess   # 重新生成 public/data/translations.json
-pnpm test         # 运行数据处理和前端逻辑测试
-pnpm build        # 创建生产构建
-pnpm preview      # 本地预览生产构建
+pnpm dev          # Start the Vite development server
+pnpm preprocess   # Regenerate public/data/translations.json
+pnpm test         # Run data processing and frontend logic tests
+pnpm build        # Create a production build
+pnpm preview      # Preview the production build locally
 ```
 
-`pnpm preprocess` 会读取 `data/` 下的 JSON 和 CSV 文件，并覆盖生成 `public/data/translations.json`。首次运行或更新数据后，应先执行该命令。
+`pnpm preprocess` reads the JSON and CSV files under `data/` and overwrites `public/data/translations.json`. Run this command first on a fresh checkout or after updating data.
 
-## 翻译数据
+## Translation Data
 
-预处理脚本会把 `data/` 下的每个直接子目录识别为一个数据源，并直接使用文件夹名称作为“项目筛选”中的显示名称。同一个 Mod 可以按命名空间拆分为多个目录；这些目录会分别显示，但不代表它们是彼此独立的 Mod。
+The preprocessing script treats each direct subdirectory under `data/` as a data source and uses the folder name directly as the display name in the "project filter". The same mod can be split into multiple directories by namespace; these directories are displayed separately, but that does not mean they are independent mods.
 
-- JSON 项目：每个 `<语言代码>.json` 文件代表一种语言，例如 `en_us.json`、`zh_cn.json` 或 `lzh.json`。脚本会自动合并同一项目中的语言文件和翻译键，不需要在代码中登记项目或语言。
-- CSV 项目：文件必须包含 `key` 列；语言列可使用 `English`、`French`、`SimplifiedChinese`、`TraditionalChinese` 等兼容表头，也可直接使用 `en_us`、`pt_br` 形式的语言代码。
+- JSON projects: each `<language code>.json` file represents one language, such as `en_us.json`, `zh_cn.json`, or `lzh.json`. The script automatically merges language files and translation keys within the same project, so you do not need to register projects or languages in code.
+- CSV projects: the file must contain a `key` column. Language columns may use compatible headers such as `English`, `French`, `SimplifiedChinese`, or `TraditionalChinese`, or they may use language codes in the `en_us` or `pt_br` form directly.
 
-在 `data/` 下新增符合上述模式的文件夹或文件后，只需运行 `pnpm preprocess`，应用即可自动显示新项目和语言，无需修改代码。
+After adding folders or files under `data/` that follow the patterns above, just run `pnpm preprocess` and the app will automatically display the new projects and languages without any code changes.
 
-所有数据最终统一写入 `public/data/translations.json`。该文件由脚本生成，不应手动修改。
+All data is ultimately written to `public/data/translations.json`. This file is generated by the script and should not be modified by hand.
 
-## 部署
+## Deployment
 
-`.github/workflows/deploy-pages.yml` 会在推送到 `main` 或手动触发时执行依赖安装、翻译数据生成和生产构建，并将 `dist/` 发布到 GitHub Pages。
+`.github/workflows/deploy-pages.yml` runs dependency installation, translation data generation, and the production build on pushes to `main` or on manual triggers, and publishes `dist/` to GitHub Pages.
 
-## 第三方内容
+## Third-Party Content
 
-以下内容属于各自的游戏、Mod、发行商、开发者、译者或本地化贡献者，不属于本项目代码许可证的授权范围：
+The following content belongs to the respective games, mods, publishers, developers, translators, or localization contributors and is not covered by the license for this project's code:
 
 - `data/aeronautics/**`
 - `data/chants-of-sennaar/**`
 - `data/create/**`
-- `data/` 下与上述同一 Mod 相关的其他命名空间数据
-- `public/data/translations.json` 中由上述数据生成的内容
+- Other namespace data under `data/` related to the same mods as above
+- Content generated from that data in `public/data/translations.json`
 
-本仓库为翻译研究、对照和非商业参考用途收录这些文本。项目维护者不主张拥有第三方游戏名称、原文、译文、商标或其他知识产权的所有权。若相关权利方希望更正署名或移除内容，请通过仓库 Issue 联系维护者。
+This repository includes these texts for translation study, comparison, and non-commercial reference purposes. The project maintainers do not claim ownership of third-party game names, source text, translations, trademarks, or other intellectual property. If a rights holder wishes to correct attribution or have content removed, please contact the maintainers through a repository issue.
 
-本项目受 Verdigloss 启发：
+This project is inspired by Verdigloss:
 
-- 项目：<https://github.com/SkyEye-FAST/verdigloss>
-- 作者：SkyEye_FAST
-- 许可证：Apache License 2.0
+- Project: <https://github.com/SkyEye-FAST/verdigloss>
+- Author: SkyEye_FAST
+- License: Apache License 2.0
 
-本项目与 Mojang Studios、Microsoft、Create Mod 团队、相关附属 Mod 作者及 Chants of Sennaar 的权利方不存在隶属、赞助或官方认可关系。所有产品名称和商标归其各自权利人所有。
+This project is not affiliated with, sponsored by, or officially endorsed by Mojang Studios, Microsoft, the Create Mod team, the authors of related add-on mods, or the rights holders of Chants of Sennaar. All product names and trademarks belong to their respective owners.
 
-## 许可证
+## License
 
-除明确标注为第三方内容的部分外，本项目自主编写的代码采用 [Apache License 2.0](LICENSE) 授权。
+Except for parts explicitly marked as third-party content, the code written by this project is licensed under the [Apache License 2.0](LICENSE).
 
 ```text
     Brassigloss
@@ -154,8 +154,8 @@ pnpm preview      # 本地预览生产构建
     http://www.apache.org/licenses/LICENSE-2.0
 ```
 
-第三方软件依赖仍受其各自许可证约束；完整依赖关系记录在 `pnpm-lock.yaml` 中。第三方声明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+Third-party software dependencies remain subject to their own licenses; the complete dependency record is in `pnpm-lock.yaml`. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for third-party notices.
 
-## 反馈
+## Feedback
 
-如遇到问题或有功能建议，欢迎提交 Issue 或 Pull Request。
+If you run into problems or have feature suggestions, issues and pull requests are welcome.
